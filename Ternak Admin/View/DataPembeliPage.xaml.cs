@@ -40,9 +40,9 @@ namespace Ternak_Admin.View
         {
         }
 
-        private void BtnTambah_OnClick(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        // private void BtnTambah_OnClick(object sender, RoutedEventArgs e)
+        // {
+        //     
+        // }
     }
 }

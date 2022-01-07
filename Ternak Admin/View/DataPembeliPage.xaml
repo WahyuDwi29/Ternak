@@ -28,7 +28,7 @@
             </Grid.ColumnDefinitions>
 
             <Button Name="BtnTambah" Grid.Column="1" Content="Tambah" FontSize="14" Width="80" Height="30"
-                    HorizontalAlignment="Left" Foreground="White" Background="#5B9978" Click="BtnTambah_OnClick"/>
+                    HorizontalAlignment="Left" Foreground="White" Background="#5B9978" />
 
             <Button Name="BtnUbah" Grid.Column="2" Content="Ubah" FontSize="14" Width="80" Height="30"
                     HorizontalAlignment="Left" Foreground="White" Background="#5B9978" Click="BtnUbah_OnClick" />
