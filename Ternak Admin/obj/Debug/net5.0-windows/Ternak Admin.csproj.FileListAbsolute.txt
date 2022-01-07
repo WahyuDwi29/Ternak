@@ -25,11 +25,9 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\net5.0-windows\runtimes\w
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\BuyConfirmWindow.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\BuyProductWindow.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ChangeProductWindow.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\AddProductWindow.baml
-D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\BuyConfirmWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\BuyProductWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ChangeProductWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ChickenPage.baml
@@ -52,3 +50,5 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\ref\Ternak
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\Ternak Admin.pdb
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\Ternak Admin.genruntimeconfig.cache
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\App.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ConfirmWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ConfirmWindow.g.cs

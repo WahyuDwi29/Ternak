@@ -18,7 +18,7 @@ namespace Ternak_Admin.Model
         public DataSet ShowHistory()
         {
             var ds = _template.SelectData("pembelian",
-                "SELECT nama_pembeli, no_telp, alamat_pembeli, nama_produk, harga_produk FROM pembelian");
+                "SELECT nama_pembeli, no_telp, alamat_pembeli, nama_produk, harga_produk, metode_pembayaran FROM pembelian");
             return ds;
         }
     }

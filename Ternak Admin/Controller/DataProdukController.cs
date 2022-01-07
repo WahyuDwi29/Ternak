@@ -60,7 +60,7 @@ namespace Ternak_Admin.Controller
             var result = _model.insertData();
             if (result)
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_check_circle.png", UriKind.Relative));
                 confirm.Lbl1.Content = "Data Berhasil di tambahkan";
                 confirm.Lbl2.Content = "";
@@ -72,7 +72,7 @@ namespace Ternak_Admin.Controller
             }
             else
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
                 confirm.Lbl1.Content = "Data Gagal di tambahkan";
                 confirm.Lbl2.Content = "pastikan anda memasukan data dengan lengkap";

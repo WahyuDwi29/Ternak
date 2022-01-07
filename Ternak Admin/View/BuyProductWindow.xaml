@@ -4,7 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         mc:Ignorable="d"
-        Title="BuyProductWindow" Height="550" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="BuyProductWindow" Height="600" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <StackPanel>
             <Label Name="LblProduct" Content="Produk" HorizontalContentAlignment="Center" FontSize="14"
@@ -25,6 +25,20 @@
             <Label Content="Harga Produk" Margin="65,0,65,-5" Padding="0" />
             <TextBox Name="TbHarga" Text="25000000" Margin="65,10,65,10"
                      FontSize="16" IsReadOnly="True" />
+            <Label Content="Metode Pembayaran" Margin="65,0,65,0" Padding="0" />
+            <Grid Margin="65,5,0,0" HorizontalAlignment="Left">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <RadioButton Grid.Column="1" Name="RdbCod" Content="COD" IsChecked="True"/>
+                <RadioButton Grid.Column="2" Name="RdbVa" Content="Bank VA" />
+                <RadioButton Grid.Column="3" Name="RdbGopay" Content="Gopay" />
+                
+            </Grid>
 
             <!-- <Button Name="BtnBeli" Margin="150,10" Content="Buy" Click="BtnCancel_OnClick" Background="#5B9978" Foreground="White" FontSize="16" FontWeight="Bold" HorizontalContentAlignment="Center" /> -->
             <!-- <Button Name="BtnCancel" Margin="150,10" Content="Cancel" Click="BtnCancel_OnClick" Background="#5B9978" Foreground="White" -->
@@ -40,7 +54,7 @@
             <!--             FontSize="16" /> -->
             <!-- </Border> -->
 
-            <Button Name="btnBuy" Content="Beli" Foreground="White" Margin="0,15,0,0" FontWeight="Bold" Width="100" Height="25"
+            <Button Name="btnBuy" Content="Beli" Foreground="White" Margin="0,40,0,0" FontWeight="Bold" Width="100" Height="25"
                     Background="#5B9978" FontSize="16" Click="BtnBuy_OnClick" />
             <Button Name="btncancel" Content="Batal" Foreground="White" Margin="0,15,0,0"
                     FontWeight="Bold" Width="100" Height="25" Background="#5B9978" FontSize="16"

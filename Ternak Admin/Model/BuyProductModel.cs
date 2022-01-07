@@ -9,6 +9,7 @@
         public string alamat_pembeli { get; set; }
         public string nama_produk { get; set; }
         public int harga_produk { get; set; }
+        public string metode_pembayaran { get; set; }
 
         public string no_telp { get; set; }
         // public int Id { get; set; }
@@ -24,10 +25,9 @@
         public bool AddPurchase()
         {
             var data = "'" + nama_pembeli + "','" + alamat_pembeli + "','" + nama_produk + "','" + harga_produk +
-                       "','" + no_telp + "'";
+                       "','" + no_telp + "','" + metode_pembayaran + "'";
 
             return _template.Insert("pembelian", data);
         }
-        
     }
 }
