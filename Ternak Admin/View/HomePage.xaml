@@ -28,11 +28,11 @@
                         <Image Source="/img/ic_produk.png" Height="60" Margin="0,50,0,0" />
                         <Label Content="Total Produk" HorizontalContentAlignment="Center" Margin="0,40,0,0"
                                FontSize="20" FontWeight="DemiBold" />
-                        <Label x:Name="lblTepatWaktu" Content="100" FontSize="50" FontWeight="Bold"
+                        <Label x:Name="lblProduk" Content="100" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Width="150" Height="35" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btnView1" Content="view all" Width="150" Height="35"
-                                    Background="Transparent" BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnProduk" Content="view all" Width="150" Height="35"
+                                    Background="Transparent" BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -42,11 +42,11 @@
                         <Image Source="/img/ic_pembeli.png" Height="60" Margin="0,50,0,0" />
                         <Label Content="Total Pembeli" HorizontalContentAlignment="Center" Margin="0,40,0,0"
                                FontSize="20" FontWeight="DemiBold" />
-                        <Label x:Name="lblTelat" Content="10" FontSize="50" FontWeight="Bold"
+                        <Label x:Name="lblPembeli" Content="10" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Width="150" Height="35" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btnView2" Content="view all" Width="150" Height="35"
-                                    Background="Transparent" BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnTotalPembeli" Content="view all" Width="150" Height="35"
+                                    Background="Transparent" BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -56,11 +56,11 @@
                         <Image Source="/img/ic_allUser.png" Height="60" Margin="0,50,0,0" />
                         <Label Content="Jumlah User" HorizontalContentAlignment="Center" Margin="0,40,0,0"
                                FontSize="20" FontWeight="DemiBold" />
-                        <Label x:Name="lblTidakHadir" Content="3" FontSize="50" FontWeight="Bold"
+                        <Label x:Name="lblJumlahUser" Content="3" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Width="150" Height="35" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btnView3" Content="view all" Width="150" Height="35"
-                                    Background="Transparent" BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnJumlahUser" Content="view all" Width="150" Height="35"
+                                    Background="Transparent" BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -82,8 +82,9 @@
                         <Label x:Name="lblSapi" Content="100" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Width="150" Height="35" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btn1" Content="view all" Width="150" Height="35" Background="Transparent"
-                                    BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnSapi" Content="view all" Width="150" Height="35"
+                                    Background="Transparent"
+                                    BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -96,8 +97,9 @@
                         <Label x:Name="lblKambing" Content="10" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Width="150" Height="35" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btn2" Content="view all" Width="150" Height="35" Background="Transparent"
-                                    BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnKambing" Content="view all" Width="150" Height="35"
+                                    Background="Transparent"
+                                    BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -110,8 +112,9 @@
                         <Label x:Name="lblAyam" Content="3" FontSize="50" FontWeight="Bold"
                                HorizontalContentAlignment="Center" />
                         <Border CornerRadius="10" Height="35" Width="150" Background="White" Margin="0,50,0,0">
-                            <Button x:Name="btn3" Content="view all" Width="150" Height="35" Background="Transparent"
-                                    BorderThickness="0" FontSize="16"/>
+                            <Button x:Name="btnAyam" Content="view all" Width="150" Height="35"
+                                    Background="Transparent"
+                                    BorderThickness="0" FontSize="16" />
                         </Border>
                     </StackPanel>
                 </Border>
@@ -122,13 +125,14 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />
                 <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <Label Content="All User" FontSize="24" FontWeight="Bold" Margin="20,0,0,0"
+            <Label Content="All User" FontSize="24" FontWeight="Bold"
                    Height="50" HorizontalContentAlignment="Left" />
 
-            <DataGrid Grid.Row="1" x:Name="dgTidakHadir" ItemsSource="{Binding}"
+            <DataGrid Grid.Row="1" Name="dgUser" ColumnWidth="*" ItemsSource="{Binding}"
                       Background="White"
-                      Style="{DynamicResource DataGridStyle}" Grid.RowSpan="2" />
+                      Style="{DynamicResource DataGridStyle}" Grid.RowSpan="2" IsReadOnly="True" />
         </Grid>
     </Grid>
 </Page>

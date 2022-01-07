@@ -5,7 +5,7 @@ namespace Ternak_Admin.Model
     public class ProdukModelCow
     {
         private ModelTemplate _template;
-        
+
         public int id { get; set; }
         public string nama { get; set; }
         public int harga { get; set; }
@@ -21,6 +21,5 @@ namespace Ternak_Admin.Model
         {
             return _template.Select("produk", "jenis='Sapi'");
         }
-        
     }
 }

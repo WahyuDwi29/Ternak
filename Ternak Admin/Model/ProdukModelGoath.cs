@@ -5,7 +5,7 @@ namespace Ternak_Admin.Model
     public class ProdukModelGoath
     {
         private ModelTemplate _template;
-        
+
         public int id { get; set; }
         public string nama { get; set; }
         public int harga { get; set; }

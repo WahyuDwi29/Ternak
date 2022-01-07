@@ -5,6 +5,7 @@
         <TargetFramework>net5.0-windows</TargetFramework>
         <RootNamespace>Ternak_Admin</RootNamespace>
         <UseWPF>true</UseWPF>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>

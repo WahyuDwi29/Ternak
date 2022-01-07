@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Media.Imaging;
-using Final_Project_Pemrograman_Lanjut.controller;
 using Microsoft.Win32;
 using Ternak_Admin.Controller;
 

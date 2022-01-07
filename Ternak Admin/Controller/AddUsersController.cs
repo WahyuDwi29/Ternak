@@ -2,7 +2,7 @@
 using Ternak_Admin.Model;
 using Ternak_Admin.View;
 
-namespace Final_Project_Pemrograman_Lanjut.controller
+namespace Ternak_Admin.Controller
 {
     public class AddUsersController
     {

@@ -1,11 +1,12 @@
 ﻿using System.Data;
+using Ternak_Admin.View;
 
 namespace Ternak_Admin.Model
 {
     public class ProdukModelChicken
     {
         private ModelTemplate _template;
-        
+
         public int id { get; set; }
         public string nama { get; set; }
         public int harga { get; set; }

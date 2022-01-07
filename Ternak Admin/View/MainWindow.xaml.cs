@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace Ternak_Admin.View
 {
@@ -12,7 +13,7 @@ namespace Ternak_Admin.View
         {
             InitializeComponent();
         }
-        
+
         private void CowPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             TbSearchProduk();
@@ -56,6 +57,7 @@ namespace Ternak_Admin.View
 
         private void DataProduk_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
+            TbSearchProduk();
             FrmMain.Navigate(new DataProdukPage());
         }
 
@@ -67,6 +69,7 @@ namespace Ternak_Admin.View
         private void TbSearch_OnGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
             TbSearch.Text = "";
+            TbSearch.Foreground = Brushes.Black;
         }
     }
 }

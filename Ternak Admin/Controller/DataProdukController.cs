@@ -11,6 +11,7 @@ namespace Ternak_Admin.Controller
         private DataProdukModel _model;
         private DataProdukPage _view;
         private AddProductWindow _viewAddProduct;
+        private HomePage _home;
 
         public DataProdukController(DataProdukPage view)
         {
@@ -22,6 +23,12 @@ namespace Ternak_Admin.Controller
         {
             _model = new DataProdukModel();
             _viewAddProduct = viewAddProduct;
+        }
+
+        public DataProdukController(HomePage home)
+        {
+            _model = new DataProdukModel();
+            _home = home;
         }
 
         public void ShowDataProduk()
