@@ -18,12 +18,12 @@ namespace Ternak_Admin.Model
             _template = new ModelTemplate();
         }
 
-        public DataSet showData()
+        public DataSet ShowData()
         {
             return _template.SelectData("produk", "SELECT nama, harga, gambar, jenis FROM produk");
         }
 
-        public bool insertData()
+        public bool InsertData()
         {
             var data = "'" + nama + "','" + harga + "','" + gambar + "','" + jenis + "'";
             return _template.Insert("produk", data);

@@ -32,7 +32,8 @@ namespace Ternak_Admin.Controller
             {
                 var imageUri =
                     string.Concat(
-                        @"D:\DATA\Project C#\Final Project Pemrograman Lanjut\Final Project Pemrograman Lanjut\img\",
+                        System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName +
+                        "\\img\\",
                         Convert.ToString(dr["gambar"]));
                 dataProducts.Add(
                     new DataProduct(Convert.ToInt32(dr["id_produk"]), Convert.ToString(dr["nama"]),

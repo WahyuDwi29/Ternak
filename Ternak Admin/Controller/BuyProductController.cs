@@ -32,13 +32,13 @@ namespace Ternak_Admin.Controller
             var result = _model.AddPurchase();
             if (result)
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ShowDialog();
                 _view.Close();
             }
             else
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
                 confirm.Lbl1.Content = "Maaf Pembelian Gagal :(";
                 confirm.Lbl2.Content = "Pastikan anda mengisi data dengan benar";

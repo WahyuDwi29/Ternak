@@ -4,11 +4,11 @@ using System.Windows.Threading;
 
 namespace Ternak_Admin.View
 {
-    public partial class BuyConfirmWindow : Window
+    public partial class ConfirmWindow : Window
     {
         private DispatcherTimer _timer;
 
-        public BuyConfirmWindow()
+        public ConfirmWindow()
         {
             InitializeComponent();
         }

@@ -33,7 +33,7 @@ namespace Ternak_Admin.Controller
 
         public void ShowDataProduk()
         {
-            var ds = _model.showData();
+            var ds = _model.ShowData();
             _view.DgProduk.ItemsSource = ds.Tables[0].DefaultView;
         }
 
@@ -57,10 +57,10 @@ namespace Ternak_Admin.Controller
             }
 
             _model.jenis = jenis;
-            var result = _model.insertData();
+            var result = _model.InsertData();
             if (result)
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_check_circle.png", UriKind.Relative));
                 confirm.Lbl1.Content = "Data Berhasil di tambahkan";
                 confirm.Lbl2.Content = "";
@@ -72,7 +72,7 @@ namespace Ternak_Admin.Controller
             }
             else
             {
-                var confirm = new BuyConfirmWindow();
+                var confirm = new ConfirmWindow();
                 confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
                 confirm.Lbl1.Content = "Data Gagal di tambahkan";
                 confirm.Lbl2.Content = "pastikan anda memasukan data dengan lengkap";
