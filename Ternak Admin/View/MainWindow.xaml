@@ -92,8 +92,6 @@
                 </DockPanel>
 
                 <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">
-                    <Image Name="ImgHistory" Source="/img/ic_history.png" Width="28" Height="28" Margin="0,0,15,0"
-                           MouseDown="ImgHistory_OnMouseDown" />
                     <Image Source="/img/ic_account.png" Width="25" Height="25" />
                     <Label Name="LblUser" Content="User" VerticalContentAlignment="Center" />
                 </DockPanel>

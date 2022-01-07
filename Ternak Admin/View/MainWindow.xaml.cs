@@ -39,11 +39,6 @@ namespace Ternak_Admin.View
             Close();
         }
 
-        private void ImgHistory_OnMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            FrmMain.Navigate(new DataPembeliPage());
-        }
-
         private void DataPembeli_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             TbSearch.Text = "Cari Pembeli";
