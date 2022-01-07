@@ -44,22 +44,22 @@ namespace Ternak_Admin.View
             FrmMain.Navigate(new DataPembeliPage());
         }
 
-        private void DataPembeli_OnMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            TbSearch.Text = "Cari Pembeli";
-            FrmMain.Navigate(new DataPembeliPage());
-        }
-
-        private void HomePage_OnMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            FrmMain.Navigate(new HomePage());
-        }
-
-        private void DataProduk_OnMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            TbSearchProduk();
-            FrmMain.Navigate(new DataProdukPage());
-        }
+        // private void DataPembeli_OnMouseDown(object sender, MouseButtonEventArgs e)
+        // {
+        //     TbSearch.Text = "Cari Pembeli";
+        //     FrmMain.Navigate(new DataPembeliPage());
+        // }
+        //
+        // private void HomePage_OnMouseDown(object sender, MouseButtonEventArgs e)
+        // {
+        //     FrmMain.Navigate(new HomePage());
+        // }
+        //
+        // private void DataProduk_OnMouseDown(object sender, MouseButtonEventArgs e)
+        // {
+        //     TbSearchProduk();
+        //     FrmMain.Navigate(new DataProdukPage());
+        // }
 
         private void TbSearchProduk()
         {

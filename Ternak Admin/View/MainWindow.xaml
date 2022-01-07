@@ -30,37 +30,37 @@
             <Label Grid.Row="0" Content="Ter-nak" FontSize="24" FontWeight="Bold" Foreground="White"
                    HorizontalAlignment="Center" />
 
-            <DockPanel Name="HomePage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}"
-                       MouseDown="HomePage_OnMouseDown">
-                <Label Content="Home" FontSize="16" Foreground="White" FontWeight="SemiBold"
-                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
-            </DockPanel>
+            <!-- <DockPanel Name="HomePage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}" -->
+            <!--            MouseDown="HomePage_OnMouseDown"> -->
+            <!--     <Label Content="Home" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
+            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
+            <!-- </DockPanel> -->
+            <!-- -->
+            <!-- <DockPanel Name="DataProduk" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}" -->
+            <!--            MouseDown="DataProduk_OnMouseDown"> -->
+            <!--     <Label Content="Data Produk" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
+            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
+            <!-- </DockPanel> -->
+            <!-- -->
+            <!-- <DockPanel Name="DataPembeli" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}" -->
+            <!--            MouseDown="DataPembeli_OnMouseDown"> -->
+            <!--     <Label Content="Data Pembeli" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
+            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
+            <!-- </DockPanel> -->
 
-            <DockPanel Name="DataProduk" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}"
-                       MouseDown="DataProduk_OnMouseDown">
-                <Label Content="Data Produk" FontSize="16" Foreground="White" FontWeight="SemiBold"
-                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
-            </DockPanel>
-
-            <DockPanel Name="DataPembeli" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}"
-                       MouseDown="DataPembeli_OnMouseDown">
-                <Label Content="Data Pembeli" FontSize="16" Foreground="White" FontWeight="SemiBold"
-                       VerticalContentAlignment="Center" Margin="10,0,0,0" />
-            </DockPanel>
-
-            <DockPanel Name="CowPage" Grid.Row="4" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="CowPage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="CowPage_OnMouseDown">
                 <Label Content="Sapi" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="GoathPage" Grid.Row="5" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="GoathPage" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="GoathPage_OnMouseDown">
                 <Label Content="Kambing" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
             </DockPanel>
 
-            <DockPanel Name="ChickenPage" Grid.Row="6" Height="50" Style="{DynamicResource MenuDockPanel}"
+            <DockPanel Name="ChickenPage" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="ChickenPage_OnMouseDown">
                 <Label Content="Ayam" FontSize="16" Foreground="White" FontWeight="SemiBold"
                        VerticalContentAlignment="Center" Margin="10,0,0,0" />
@@ -101,7 +101,7 @@
 
             <Grid Grid.Row="1" Margin="10">
 
-                <Frame Name="FrmMain" NavigationUIVisibility="Hidden" Source="HomePage.xaml">
+                <Frame Name="FrmMain" NavigationUIVisibility="Hidden" Source="CowPage.xaml">
 
                 </Frame>
             </Grid>
