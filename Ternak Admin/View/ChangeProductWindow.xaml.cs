@@ -28,6 +28,7 @@ namespace Ternak_Admin.View
 
         private void BtnChange_OnClick(object sender, RoutedEventArgs e)
         {
+            
         }
     }
 }
