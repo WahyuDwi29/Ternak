@@ -2,7 +2,7 @@
 
 namespace Ternak_Admin.View
 {
-    public partial class ChangeDataPembeliWindow : Window
+    public partial class ChangePembeliWindow : Window
     {
         public static string nama_pembeli;
         public static string no_telp;
@@ -11,7 +11,7 @@ namespace Ternak_Admin.View
         public static int harga_produk;
         public static string metode_pembayaran;
 
-        public ChangeDataPembeliWindow()
+        public ChangePembeliWindow()
         {
             InitializeComponent();
             TbNameCustomer.Text = nama_pembeli;

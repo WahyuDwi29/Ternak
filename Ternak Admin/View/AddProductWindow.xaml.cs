@@ -11,6 +11,15 @@ namespace Ternak_Admin.View
         private DataProdukController _controller;
         private Microsoft.Win32.OpenFileDialog _openFileDialog;
 
+        public delegate void UpdateDelegate(object sender, UpdateEventArgs args);
+
+        public event UpdateDelegate UpdateEventHandler;
+
+        public class UpdateEventArgs : EventArgs
+        {
+            public string data { get; set; }
+        }
+
         public AddProductWindow()
         {
             InitializeComponent();
@@ -43,6 +52,9 @@ namespace Ternak_Admin.View
 
             //insert
             _controller.InsertData();
+
+            var args = new UpdateEventArgs();
+            UpdateEventHandler!.Invoke(this, args);
         }
 
         private void BtnCancel_OnClick(object sender, RoutedEventArgs e)

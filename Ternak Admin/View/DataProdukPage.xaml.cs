@@ -16,9 +16,15 @@ namespace Ternak_Admin.View
             _controller.ShowDataProduk();
         }
 
+        private void F2_UpdateEventHandler(object sender, AddProductWindow.UpdateEventArgs args)
+        {
+            _controller.ShowDataProduk();
+        }
+
         private void BtnTambah_OnClick(object sender, RoutedEventArgs e)
         {
             var add = new AddProductWindow();
+            add.UpdateEventHandler += F2_UpdateEventHandler;
             add.ShowDialog();
         }
 

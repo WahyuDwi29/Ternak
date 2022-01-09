@@ -16,26 +16,31 @@ namespace Ternak_Admin.View
             _controller.DataHistory();
         }
 
+        private void F2_UpdateEventHandler(object sender, AddPembeliWindow.UpdateEventArgs args)
+        {
+            _controller.DataHistory();
+        }
+        
         private void DgHistory_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = DgPembelian.SelectedItem;
-            ChangeDataPembeliWindow.nama_pembeli =
+            ChangePembeliWindow.nama_pembeli =
                 (DgPembelian.SelectedCells[0].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeDataPembeliWindow.no_telp =
+            ChangePembeliWindow.no_telp =
                 (DgPembelian.SelectedCells[1].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeDataPembeliWindow.alamat_pembeli =
+            ChangePembeliWindow.alamat_pembeli =
                 (DgPembelian.SelectedCells[2].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeDataPembeliWindow.nama_produk =
+            ChangePembeliWindow.nama_produk =
                 (DgPembelian.SelectedCells[3].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeDataPembeliWindow.harga_produk =
+            ChangePembeliWindow.harga_produk =
                 Convert.ToInt32((DgPembelian.SelectedCells[4].Column.GetCellContent(item) as TextBlock)?.Text);
-            ChangeDataPembeliWindow.metode_pembayaran =
+            ChangePembeliWindow.metode_pembayaran =
                 (DgPembelian.SelectedCells[5].Column.GetCellContent(item) as TextBlock)?.Text;
         }
 
         private void BtnUbah_OnClick(object sender, RoutedEventArgs e)
         {
-            var ubah = new ChangeDataPembeliWindow();
+            var ubah = new ChangePembeliWindow();
             ubah.ShowDialog();
         }
 
@@ -45,6 +50,9 @@ namespace Ternak_Admin.View
 
         private void BtnTambah_OnClick(object sender, RoutedEventArgs e)
         {
+            var add = new AddPembeliWindow();
+            add.UpdateEventHandler += F2_UpdateEventHandler;
+            add.ShowDialog();
         }
     }
 }
