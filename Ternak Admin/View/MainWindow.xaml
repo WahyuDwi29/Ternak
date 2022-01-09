@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ternak_Admin"
         mc:Ignorable="d"
-       Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" MinHeight="768" MinWidth="1024">
+        Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" MinHeight="768" MinWidth="1024">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -29,24 +29,6 @@
 
             <Label Grid.Row="0" Content="Ter-nak" FontSize="24" FontWeight="Bold" Foreground="White"
                    HorizontalAlignment="Center" />
-
-            <!-- <DockPanel Name="HomePage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}" -->
-            <!--            MouseDown="HomePage_OnMouseDown"> -->
-            <!--     <Label Content="Home" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
-            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
-            <!-- </DockPanel> -->
-            <!-- -->
-            <!-- <DockPanel Name="DataProduk" Grid.Row="2" Height="50" Style="{DynamicResource MenuDockPanel}" -->
-            <!--            MouseDown="DataProduk_OnMouseDown"> -->
-            <!--     <Label Content="Data Produk" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
-            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
-            <!-- </DockPanel> -->
-            <!-- -->
-            <!-- <DockPanel Name="DataPembeli" Grid.Row="3" Height="50" Style="{DynamicResource MenuDockPanel}" -->
-            <!--            MouseDown="DataPembeli_OnMouseDown"> -->
-            <!--     <Label Content="Data Pembeli" FontSize="16" Foreground="White" FontWeight="SemiBold" -->
-            <!--            VerticalContentAlignment="Center" Margin="10,0,0,0" /> -->
-            <!-- </DockPanel> -->
 
             <DockPanel Name="CowPage" Grid.Row="1" Height="50" Style="{DynamicResource MenuDockPanel}"
                        MouseDown="CowPage_OnMouseDown">
@@ -87,8 +69,7 @@
 
                 <DockPanel Grid.Column="0" Visibility="Hidden">
                     <TextBox Name="TbSearch" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25"
-                             Margin="20,0,0,0"
-                            GotKeyboardFocus="TbSearch_OnGotKeyboardFocus"/>
+                             Margin="20,0,0,0" />
                 </DockPanel>
 
                 <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">

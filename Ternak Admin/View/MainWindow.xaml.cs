@@ -16,19 +16,16 @@ namespace Ternak_Admin.View
 
         private void CowPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearchProduk();
             FrmMain.Navigate(new CowPage());
         }
 
         private void GoathPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearchProduk();
             FrmMain.Navigate(new GoathPage());
         }
 
         private void ChickenPage_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            TbSearchProduk();
             FrmMain.Navigate(new ChickenPage());
         }
 
@@ -42,34 +39,6 @@ namespace Ternak_Admin.View
         private void ImgHistory_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             FrmMain.Navigate(new DataPembeliPage());
-        }
-
-        // private void DataPembeli_OnMouseDown(object sender, MouseButtonEventArgs e)
-        // {
-        //     TbSearch.Text = "Cari Pembeli";
-        //     FrmMain.Navigate(new DataPembeliPage());
-        // }
-        //
-        // private void HomePage_OnMouseDown(object sender, MouseButtonEventArgs e)
-        // {
-        //     FrmMain.Navigate(new HomePage());
-        // }
-        //
-        // private void DataProduk_OnMouseDown(object sender, MouseButtonEventArgs e)
-        // {
-        //     TbSearchProduk();
-        //     FrmMain.Navigate(new DataProdukPage());
-        // }
-
-        private void TbSearchProduk()
-        {
-            TbSearch.Text = "Cari Produk";
-        }
-
-        private void TbSearch_OnGotKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
-        {
-            TbSearch.Text = "";
-            TbSearch.Foreground = Brushes.Black;
         }
     }
 }
