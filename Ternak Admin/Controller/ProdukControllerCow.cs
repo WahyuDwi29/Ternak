@@ -23,11 +23,13 @@ namespace Ternak_Admin.Controller
             var goathProducts = new List<DataProduct>();
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                var imageUri = String.Concat(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName +
-                                             "\\img\\", Convert.ToString(dr["gambar"]));
+                var imageUri = String.Concat(
+                    System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName +
+                    "\\img\\", Convert.ToString(dr["gambar"]));
                 goathProducts.Add(
-                    new DataProduct(Convert.ToInt32(dr["id_produk"]),Convert.ToString(dr["nama"]), Convert.ToInt32(dr["harga"]),
-                    imageUri));
+                    new DataProduct(Convert.ToInt32(dr["id_produk"]), Convert.ToString(dr["nama"]),
+                        Convert.ToInt32(dr["harga"]),
+                        imageUri));
             }
 
             return goathProducts;

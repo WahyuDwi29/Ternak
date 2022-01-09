@@ -16,12 +16,6 @@ namespace Ternak_Admin.Controller
             _model = new BuyProductModel();
         }
 
-        //     public DataSet ShowData()
-        //     {
-        //         var ds = _model.ShowData();
-        //         return ds;
-        //     }
-
         public void Purchase()
         {
             _model.nama_produk = _view.LblProduct.Content.ToString();
@@ -29,22 +23,28 @@ namespace Ternak_Admin.Controller
             _model.no_telp = _view.TbNomor.Text;
             _model.alamat_pembeli = _view.TbAlamat.Text;
             _model.harga_produk = Convert.ToInt32(_view.TbHarga.Text);
-
-            var method = "";
+            var metode = "";
             if (_view.RdbCod.IsChecked == true)
             {
-                method = "COD";
-            }
-            else if (_view.RdbVa.IsChecked == true)
-            {
-                method = "Bank Virtual Account";
-            }
-            else
-            {
-                method = "Gopay";
+                metode = "COD";
             }
 
-            _model.metode_pembayaran = method;
+            else if (_view.RdbBca.IsChecked == true)
+            {
+                metode = "BCA";
+            }
+
+            else if (_view.RdbBni.IsChecked == true)
+            {
+                metode = "BNI";
+            }
+
+            else if (_view.RdbMandiri.IsChecked == true)
+            {
+                metode = "MANDIRI";
+            }
+
+            _model.metode_pembayaran = metode;
 
             var result = _model.AddPurchase();
             if (result)

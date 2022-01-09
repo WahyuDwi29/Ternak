@@ -10,7 +10,6 @@ namespace Ternak_Admin.Controller
     {
         private ProdukModelChicken _model;
         private ChickenPage _view;
-        private HomePage _home;
 
         public ProdukControllerChicken(ChickenPage chickenPage)
         {
@@ -18,11 +17,6 @@ namespace Ternak_Admin.Controller
             _view = chickenPage;
         }
 
-        public ProdukControllerChicken(HomePage home)
-        {
-            _model = new ProdukModelChicken();
-            _home = home;
-        }
 
         public List<DataProduct> ShowProductChicken()
         {
