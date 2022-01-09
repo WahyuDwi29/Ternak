@@ -80,5 +80,10 @@ namespace Ternak_Admin.Controller
                 confirm.ShowDialog();
             }
         }
+
+        public void Update()
+        {
+            
+        } 
     }
 }

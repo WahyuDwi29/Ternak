@@ -7,6 +7,7 @@ namespace Ternak_Admin.Controller
     {
         private DataPembeliModel _model;
         private DataPembeliPage _view;
+        private MainWindow _main;
 
         public DataPembeliController(DataPembeliPage view)
         {
@@ -14,9 +15,17 @@ namespace Ternak_Admin.Controller
             _view = view;
         }
 
+        public DataPembeliController(MainWindow main)
+        {
+            _model = new DataPembeliModel();
+            _main = main;
+        }
+
+
         public void DataHistory()
         {
-            var ds = _model.ShowHistory();
+            
+            var ds = _model.ShowPembeli();
             _view.DgPembelian.ItemsSource = ds.Tables[0].DefaultView;
         }
     }

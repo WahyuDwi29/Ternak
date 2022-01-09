@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ternak_Admin"
         mc:Ignorable="d"
-       Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" MinHeight="768" MinWidth="1024">
+        Title="MainWindow" Height="768" Width="1024" WindowState="Maximized" MinHeight="768" MinWidth="1024">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -85,11 +85,20 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <DockPanel Grid.Column="0">
-                    <TextBox Name="TbSearch" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25"
-                             Margin="20,0,0,0"
-                            GotKeyboardFocus="TbSearch_OnGotKeyboardFocus"/>
-                </DockPanel>
+                <!-- <DockPanel Name="DpPembeli" Grid.Column="0" Visibility="Hidden"> -->
+                <!--     <TextBox Name="TbSearchAllPembeli" FontSize="16" Text="Cari Pembeli" Foreground="Gray" Height="25" -->
+                <!--              Margin="20,0,0,0" -->
+                <!--              GotFocus="TbSearchPembeli_OnGotFocus" -->
+                <!--              LostKeyboardFocus="TbSearchPembeli_OnLostKeyboardFocus" /> -->
+                <!-- </DockPanel> -->
+                <!-- -->
+                <!-- <DockPanel Name="DpProduk" Grid.Column="0" Visibility="Hidden"> -->
+                <!--     <TextBox Name="TbSearchAllProduk" FontSize="16" Text="Cari Produk" Foreground="Gray" Height="25" -->
+                <!--              Margin="20,0,0,0" -->
+                <!--              GotKeyboardFocus="TbSearch_OnGotKeyboardFocus" -->
+                <!--              LostKeyboardFocus="TbSearch_OnLostKeyboardFocus" /> -->
+                <!-- </DockPanel> -->
+
 
                 <DockPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,10,0">
                     <Image Source="/img/ic_account.png" Width="25" Height="25" />

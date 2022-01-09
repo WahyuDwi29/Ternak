@@ -52,3 +52,5 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\Ternak Adm
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\App.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ConfirmWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ConfirmWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ChangeHistoryWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\net5.0-windows\View\ChangeHistoryWindow.g.cs

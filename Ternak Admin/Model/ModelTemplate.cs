@@ -110,7 +110,7 @@ namespace Ternak_Admin.Model
 
             try
             {
-                var query = "UPADETE " + table + " SET " + data + " WHERE " + condition;
+                var query = "UPDATE " + table + " SET " + data + " WHERE " + condition;
                 _conn.Open();
                 _command = new SqlCommand();
                 _command.Connection = _conn;

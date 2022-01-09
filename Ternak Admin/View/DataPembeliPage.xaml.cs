@@ -19,20 +19,20 @@ namespace Ternak_Admin.View
         private void DgHistory_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = DgPembelian.SelectedItem;
-            ChangeProductWindow.nama_pembeli =
+            ChangeHistoryWindow.nama_pembeli =
                 (DgPembelian.SelectedCells[0].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeProductWindow.no_telp = (DgPembelian.SelectedCells[1].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeProductWindow.alamat_pembeli =
+            ChangeHistoryWindow.no_telp = (DgPembelian.SelectedCells[1].Column.GetCellContent(item) as TextBlock)?.Text;
+            ChangeHistoryWindow.alamat_pembeli =
                 (DgPembelian.SelectedCells[2].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeProductWindow.nama_produk =
+            ChangeHistoryWindow.nama_produk =
                 (DgPembelian.SelectedCells[3].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeProductWindow.harga_produk =
+            ChangeHistoryWindow.harga_produk =
                 Convert.ToInt32((DgPembelian.SelectedCells[4].Column.GetCellContent(item) as TextBlock)?.Text);
         }
 
         private void BtnUbah_OnClick(object sender, RoutedEventArgs e)
         {
-            var ubah = new ChangeProductWindow();
+            var ubah = new ChangeHistoryWindow();
             ubah.ShowDialog();
         }
 

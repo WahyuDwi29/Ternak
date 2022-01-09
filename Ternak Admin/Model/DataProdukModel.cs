@@ -28,5 +28,11 @@ namespace Ternak_Admin.Model
             var data = "'" + nama + "','" + harga + "','" + gambar + "','" + jenis + "'";
             return _template.Insert("produk", data);
         }
+
+        public bool UpdateData()
+        {
+            var data = $"nama ={nama}, harga = {harga}, gambar = {gambar}, jenis = {jenis}";
+            return _template.Update("produk", data, $"nama = {nama}");
+        }
     }
 }
