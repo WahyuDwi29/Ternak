@@ -1,0 +1,44 @@
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.exe
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.deps.json
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.runtimeconfig.json
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.runtimeconfig.dev.json
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\Ternak Admin.pdb
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.csproj.AssemblyReference.cache
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\BuyProductWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ChickenPage.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ConfirmWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\CowPage.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\DataPembeliPage.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\GoathPage.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\LoginWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\RegisterWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\BuyProductWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ChickenPage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ConfirmWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\CowPage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\DataPembeliPage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\GoathPage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\LoginWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\RegisterWindow.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\App.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin_MarkupCompile.cache
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin_MarkupCompile.lref
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\App.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\MainWindow.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.g.resources
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.AssemblyInfoInputs.cache
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.AssemblyInfo.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.csproj.CoreCompileInputs.cache
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.csproj.CopyComplete
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.dll
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.pdb
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.genruntimeconfig.cache
