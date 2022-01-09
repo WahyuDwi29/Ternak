@@ -29,6 +29,29 @@ namespace Ternak_Admin.Controller
             _model.no_telp = _view.TbNomor.Text;
             _model.alamat_pembeli = _view.TbAlamat.Text;
             _model.harga_produk = Convert.ToInt32(_view.TbHarga.Text);
+            var metode = "";
+            if (_view.RdbCod.IsChecked == true)
+            {
+                metode = "COD";
+            }
+
+            else if (_view.RdbBca.IsChecked == true)
+            {
+                metode = "BCA";
+            }
+
+            else if (_view.RdbBni.IsChecked == true)
+            {
+                metode = "BNI";
+            }
+
+            else if (_view.RdbMandiri.IsChecked == true)
+            {
+                metode = "MANDIRI";
+            }
+
+            _model.metode_pembayaran = metode;
+
             var result = _model.AddPurchase();
             if (result)
             {

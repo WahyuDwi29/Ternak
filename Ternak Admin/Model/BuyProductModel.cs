@@ -11,6 +11,8 @@
         public int harga_produk { get; set; }
 
         public string no_telp { get; set; }
+
+        public string metode_pembayaran { get; set; }
         // public int Id { get; set; }
         // public string Name { get; set; }
         // public string Image { get; set; }
@@ -24,10 +26,9 @@
         public bool AddPurchase()
         {
             var data = "'" + nama_pembeli + "','" + alamat_pembeli + "','" + nama_produk + "','" + harga_produk +
-                       "','" + no_telp + "'";
+                       "','" + no_telp + "','" + metode_pembayaran + "'";
 
             return _template.Insert("pembelian", data);
         }
-        
     }
 }

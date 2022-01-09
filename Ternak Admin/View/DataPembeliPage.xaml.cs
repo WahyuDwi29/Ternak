@@ -19,20 +19,23 @@ namespace Ternak_Admin.View
         private void DgHistory_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = DgPembelian.SelectedItem;
-            ChangeHistoryWindow.nama_pembeli =
+            ChangeDataPembeliWindow.nama_pembeli =
                 (DgPembelian.SelectedCells[0].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeHistoryWindow.no_telp = (DgPembelian.SelectedCells[1].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeHistoryWindow.alamat_pembeli =
+            ChangeDataPembeliWindow.no_telp =
+                (DgPembelian.SelectedCells[1].Column.GetCellContent(item) as TextBlock)?.Text;
+            ChangeDataPembeliWindow.alamat_pembeli =
                 (DgPembelian.SelectedCells[2].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeHistoryWindow.nama_produk =
+            ChangeDataPembeliWindow.nama_produk =
                 (DgPembelian.SelectedCells[3].Column.GetCellContent(item) as TextBlock)?.Text;
-            ChangeHistoryWindow.harga_produk =
+            ChangeDataPembeliWindow.harga_produk =
                 Convert.ToInt32((DgPembelian.SelectedCells[4].Column.GetCellContent(item) as TextBlock)?.Text);
+            ChangeDataPembeliWindow.metode_pembayaran =
+                (DgPembelian.SelectedCells[5].Column.GetCellContent(item) as TextBlock)?.Text;
         }
 
         private void BtnUbah_OnClick(object sender, RoutedEventArgs e)
         {
-            var ubah = new ChangeHistoryWindow();
+            var ubah = new ChangeDataPembeliWindow();
             ubah.ShowDialog();
         }
 
@@ -42,7 +45,6 @@ namespace Ternak_Admin.View
 
         private void BtnTambah_OnClick(object sender, RoutedEventArgs e)
         {
-            
         }
     }
 }

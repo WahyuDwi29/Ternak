@@ -15,11 +15,11 @@ namespace Ternak_Admin.View
         {
             InitializeComponent();
             _controller = new BuyProductController(this);
-            LblProduct.Content = Product;
-            
-            var path = "/img/" + Image;
-            var uri = new Uri(path, UriKind.Relative);
-            ImgProduct.Source = new BitmapImage(uri);
+            // LblProduct.Content = Product;
+            //
+            // var path = "/img/" + Image;
+            // var uri = new Uri(path, UriKind.Relative);
+            // ImgProduct.Source = new BitmapImage(uri);
         }
 
 

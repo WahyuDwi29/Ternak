@@ -12,7 +12,7 @@
             <RowDefinition />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <Label Grid.Row="0" Content="Tambah Produk" VerticalAlignment="Center" FontSize="20" FontWeight="SemiBold"
+        <Label Grid.Row="0" Content="Ubah Produk" VerticalAlignment="Center" FontSize="20" FontWeight="SemiBold"
                Margin="33,0" Padding="0" />
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -52,7 +52,7 @@
                     <ColumnDefinition />
                     <ColumnDefinition Width="250" />
                 </Grid.ColumnDefinitions>
-                <Image Name="Image" Source="/img/no image.jpg" Height="150" HorizontalAlignment="Left" Margin="0,-60,0,0" />
+                <Image Name="Image" Source="/img/no image.jpg" Height="150" Width="200" HorizontalAlignment="Left" Margin="0,-60,0,0" />
                 <Button Grid.Column="1" Name="btnBrowse" Content="Browse" Foreground="White" Background="#5B9978"
                         Width="100" Height="25" HorizontalAlignment="Left" Margin="15,50,0,0" />
             </Grid>
