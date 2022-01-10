@@ -22,11 +22,16 @@ namespace Ternak_Admin.Model
         public DataSet ShowPembeli()
         {
             var ds = new DataSet();
-           
-            ds = _template.SelectData("pembelian",
-                "SELECT nama_pembeli, no_telp, alamat_pembeli, nama_produk, harga_produk, metode_pembayaran FROM pembelian");
+
+            ds = _template.Select("pembelian", null);
 
             return ds;
+        }
+
+        public bool UpdateData()
+        {
+            var data = $"nama_pembeli ={nama_pembeli}, alamat_pembeli = {alamat_pembeli}, nama_produk = {nama_produk}, harga_produk = {harga_produk}, no_telp = {no_telp}, metode_pembayaran = {metode_pembayaran}";
+            return _template.Update("produk", data, $"id_pembelian = {id_pembelian}");
         }
     }
 }

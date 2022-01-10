@@ -8,6 +8,11 @@ namespace Ternak_Admin.View
     public partial class DataProdukPage : Page
     {
         private DataProdukController _controller;
+        
+        public static string nama_produk;
+        public static int harga_produk;
+        public static string jenis;
+        public static string gambar;
 
         public DataProdukPage()
         {
@@ -43,5 +48,7 @@ namespace Ternak_Admin.View
             var change = new ChangeProductWindow();
             change.ShowDialog();
         }
+        
+        private void SetStaticVar()
     }
 }

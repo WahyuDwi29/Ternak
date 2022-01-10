@@ -6,11 +6,6 @@ namespace Ternak_Admin.View
 {
     public partial class ChangeProductWindow : Window
     {
-        public static string nama_produk;
-        public static int harga_produk;
-        public static string jenis;
-        public static string gambar;
-
         public ChangeProductWindow()
         {
             InitializeComponent();

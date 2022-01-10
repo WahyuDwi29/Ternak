@@ -20,7 +20,7 @@ namespace Ternak_Admin.Model
 
         public DataSet ShowData()
         {
-            return _template.SelectData("produk", "SELECT nama, harga, gambar, jenis FROM produk");
+            return _template.Select("produk", null);
         }
 
         public bool InsertData()
@@ -32,7 +32,7 @@ namespace Ternak_Admin.Model
         public bool UpdateData()
         {
             var data = $"nama ={nama}, harga = {harga}, gambar = {gambar}, jenis = {jenis}";
-            return _template.Update("produk", data, $"nama = {nama}");
+            return _template.Update("produk", data, $"id_produk = {id}");
         }
     }
 }
