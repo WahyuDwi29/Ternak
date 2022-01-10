@@ -175,6 +175,8 @@
       <Resource Include="img\ic_pembeli.png" />
       <None Remove="img\ic_produk.png" />
       <Resource Include="img\ic_produk.png" />
+      <None Remove="img\no image.png" />
+      <Resource Include="img\no image.png" />
     </ItemGroup>
 
 </Project>
