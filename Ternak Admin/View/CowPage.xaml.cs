@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -23,11 +24,14 @@ namespace Ternak_Admin.View
 
             InitializeComponent();
             var product = GetProduct();
+            //var product = new List<DataProduct>();
             if (product.Count > 0)
             {
                 ListViewProducts.ItemsSource = product;
+                //product = GetProduct();
             }
         }
+
         private List<DataProduct> GetProduct()
         {
             return _produkControllerCow.ShowProductCow();

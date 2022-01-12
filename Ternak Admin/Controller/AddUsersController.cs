@@ -19,7 +19,6 @@ namespace Ternak_Admin.Controller
         {
             _usersModel.nama = _registerWindow.txtUsername.Text;
             _usersModel.password = _registerWindow.txtPassword.Password;
-            _usersModel.email = _registerWindow.txtEmail.Text;
             var result = _usersModel.AddUsers();
             if (result)
             {

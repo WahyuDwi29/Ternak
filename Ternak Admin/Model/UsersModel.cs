@@ -8,7 +8,6 @@ namespace Ternak_Admin.Model
 
         public string nama { get; set; }
         public string password { get; set; }
-        public string email { get; set; }
 
         public static string UserName;
         public static string Password;
@@ -40,7 +39,7 @@ namespace Ternak_Admin.Model
 
         public bool AddUsers()
         {
-            var data = "'" + nama + "','" + password + "','" + email + "'";
+            var data = "'" + nama + "','" + password + "'";
             return _template.Insert("users", data);
         }
     }
