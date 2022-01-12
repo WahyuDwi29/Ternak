@@ -38,7 +38,12 @@ namespace Ternak_Admin.View
 
         private void ImgHistory_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            FrmMain.Navigate(new DataPembeliPage());
+            FrmMain.Navigate(new HistoryPage());
+        }
+        
+        private void UIElement_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            FrmMain.Navigate(new ProfilePage());
         }
     }
 }

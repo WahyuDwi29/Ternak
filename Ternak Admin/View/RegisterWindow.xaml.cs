@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 using Ternak_Admin.Controller;
 
 namespace Ternak_Admin.View
@@ -15,6 +16,13 @@ namespace Ternak_Admin.View
         private void Btndaftar(object sender, RoutedEventArgs e)
         {
             _addUsers.Register();
+        }
+
+        private void LblDaftar_OnMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            var login = new LoginWindow();
+            login.Show();
+            Close();
         }
     }
 }

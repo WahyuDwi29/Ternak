@@ -15,7 +15,6 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\BuyPro
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ChickenPage.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ConfirmWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\CowPage.baml
-D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\DataPembeliPage.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\GoathPage.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\LoginWindow.baml
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\RegisterWindow.baml
@@ -23,7 +22,6 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\BuyPro
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ChickenPage.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ConfirmWindow.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\CowPage.g.cs
-D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\DataPembeliPage.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\GoathPage.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\LoginWindow.g.cs
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
@@ -42,3 +40,7 @@ D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admi
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.dll
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.pdb
 D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\Ternak Admin.genruntimeconfig.cache
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\HistoryPage.baml
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\HistoryPage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ProfilePage.g.cs
+D:\DATA\Project C#\Ternak Admin\Ternak Admin\obj\Debug\netcoreapp3.1\View\ProfilePage.baml

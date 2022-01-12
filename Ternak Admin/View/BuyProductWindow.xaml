@@ -7,9 +7,9 @@
         Title="BuyProductWindow" Height="600" Width="450" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
         <StackPanel>
-            <Label Name="LblProduct" Content="Nama Produk" HorizontalContentAlignment="Center" FontSize="14"
+            <Label Name="LblProduct" Content="Sapi Kurban" HorizontalContentAlignment="Center" FontSize="16"
                    Margin="10" FontWeight="Bold" />
-            <Image Name="ImgProduct" Source="/img/no image.png" Height="150" Width="150" />
+            <Image Name="ImgProduct" Source="/img/SapiB1.jpeg" Height="150" Width="250" />
             <Label Content="Nama Pembeli" Margin="65,10,65,-5" Padding="0" />
             <TextBox Name="TbName" Margin="65,10,65,10"
                      FontSize="16" />
@@ -23,7 +23,7 @@
                      FontSize="16" />
 
             <Label Content="Harga Produk" Margin="65,0,65,-5" Padding="0" />
-            <TextBox Name="TbHarga" Text="25000000" Margin="65,10,65,10"
+            <TextBox Name="TbHarga" Text="50000000" Margin="65,10,65,10"
                      FontSize="16" IsReadOnly="True" />
             <Label Content="Metode Pembayaran" Margin="65,0,65,0" Padding="0"></Label>
             <Grid Margin="65,5,65,20">

@@ -20,19 +20,19 @@ namespace Ternak_Admin.Controller
         public List<DataProduct> ShowProductCow()
         {
             var ds = _model.ShowProduct();
-            var goathProducts = new List<DataProduct>();
+            var cowProduct = new List<DataProduct>();
             foreach (DataRow dr in ds.Tables[0].Rows)
             {
                 var imageUri = String.Concat(
                     System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName +
                     "\\img\\", Convert.ToString(dr["gambar"]));
-                goathProducts.Add(
+                cowProduct.Add(
                     new DataProduct(Convert.ToInt32(dr["id_produk"]), Convert.ToString(dr["nama"]),
                         Convert.ToInt32(dr["harga"]),
                         imageUri));
             }
 
-            return goathProducts;
+            return cowProduct;
         }
     }
 }

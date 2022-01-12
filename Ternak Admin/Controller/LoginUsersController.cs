@@ -19,7 +19,7 @@ namespace Ternak_Admin.Controller
         public void Login()
         {
             _usersModel.nama = _loginWindow.txtUsername.Text;
-            _usersModel.password = _loginWindow.txtPassword.Password;
+            _usersModel.password = _loginWindow.PbPassword.Password;
             var result = _usersModel.CheckLogin();
 
             if (result)
@@ -33,7 +33,7 @@ namespace Ternak_Admin.Controller
             {
                 MessageBox.Show("Your username/password is wrong");
                 _loginWindow.txtUsername.Text = "";
-                _loginWindow.txtPassword.Password = "";
+                _loginWindow.PbPassword.Password = "";
                 _loginWindow.txtUsername.Focus();
             }
         }

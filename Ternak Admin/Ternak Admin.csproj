@@ -177,6 +177,8 @@
       <Resource Include="img\ic_produk.png" />
       <None Remove="img\no image.png" />
       <Resource Include="img\no image.png" />
+      <None Remove="img\ic_visibility.png" />
+      <Resource Include="img\ic_visibility.png" />
     </ItemGroup>
 
 </Project>

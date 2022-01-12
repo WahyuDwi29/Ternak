@@ -5,11 +5,13 @@ namespace Ternak_Admin.Model
     public class UsersModel
     {
         private ModelTemplate _template;
-        
+
         public string nama { get; set; }
         public string password { get; set; }
+        public string email { get; set; }
 
         public static string UserName;
+        public static string Password;
 
         public UsersModel()
         {
@@ -25,6 +27,7 @@ namespace Ternak_Admin.Model
             if (ds.Tables[0].Rows.Count > 0)
             {
                 UserName = ds.Tables[0].Rows[0][1].ToString();
+                Password = ds.Tables[0].Rows[0][2].ToString();
                 result = true;
             }
             else
@@ -37,7 +40,7 @@ namespace Ternak_Admin.Model
 
         public bool AddUsers()
         {
-            var data = "'" + nama + "','" + password + "'";
+            var data = "'" + nama + "','" + password + "','" + email + "'";
             return _template.Insert("users", data);
         }
     }

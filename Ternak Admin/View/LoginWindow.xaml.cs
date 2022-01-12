@@ -23,7 +23,8 @@ namespace Ternak_Admin.View
         {
             var daftarWindow = new RegisterWindow();
             daftarWindow.Show();
-            this.Close();
+            Close();
         }
+        
     }
 }
