@@ -44,12 +44,9 @@
                 <PasswordBox x:Name="PbPassword"
                              Margin="30,3,30,0"
                              FontSize="16" />
-                <Label x:Name="lblLupaSandi" Content="Lupa kata sandi ?"
-                       FontSize="12" Margin="30,0,30,0"
-                       Padding="0" Foreground="#FF13591A" />
                 <Button x:Name="btnLogin" Click="btnLogin_Click"
                         Width="120" Height="25"
-                        Margin="30,20,30,0" Background="#5b9978"
+                        Margin="30,30,30,0" Background="#5b9978"
                         Content="Login" Foreground="White"
                         FontWeight="Bold"
                         FontSize="14" />

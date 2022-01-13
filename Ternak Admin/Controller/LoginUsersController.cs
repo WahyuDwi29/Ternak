@@ -6,35 +6,35 @@ namespace Ternak_Admin.Controller
 {
     public class UsersController
     {
-        private UsersModel _usersModel;
-        private LoginWindow _loginWindow;
+        private UsersModel _model;
+        private LoginWindow _view;
 
-        public UsersController(LoginWindow loginWindow)
+        public UsersController(LoginWindow view)
         {
-            _usersModel = new UsersModel();
-            _loginWindow = loginWindow;
+            _model = new UsersModel();
+            _view = view;
         }
         
 
         public void Login()
         {
-            _usersModel.nama = _loginWindow.txtUsername.Text;
-            _usersModel.password = _loginWindow.PbPassword.Password;
-            var result = _usersModel.CheckLogin();
+            _model.nama = _view.txtUsername.Text;
+            _model.password = _view.PbPassword.Password;
+            var result = _model.CheckLogin();
 
             if (result)
             {
                 var main = new MainWindow();
                 main.LblUser.Content = UsersModel.UserName;
                 main.Show();
-                _loginWindow.Close();
+                _view.Close();
             }
             else
             {
                 MessageBox.Show("Your username/password is wrong");
-                _loginWindow.txtUsername.Text = "";
-                _loginWindow.PbPassword.Password = "";
-                _loginWindow.txtUsername.Focus();
+                _view.txtUsername.Text = "";
+                _view.PbPassword.Password = "";
+                _view.txtUsername.Focus();
             }
         }
         

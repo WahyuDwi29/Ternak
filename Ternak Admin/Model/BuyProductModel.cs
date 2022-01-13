@@ -10,13 +10,8 @@
         public string nama_produk { get; set; }
         public int harga_produk { get; set; }
         public string metode_pembayaran { get; set; }
-
         public string no_telp { get; set; }
-        // public int Id { get; set; }
-        // public string Name { get; set; }
-        // public string Image { get; set; }
-        // public string Jenis { get; set; }
-
+        
         public BuyProductModel()
         {
             _template = new ModelTemplate();

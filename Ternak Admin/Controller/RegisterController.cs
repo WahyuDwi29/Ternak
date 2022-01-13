@@ -4,28 +4,28 @@ using Ternak_Admin.View;
 
 namespace Ternak_Admin.Controller
 {
-    public class AddUsersController
+    public class RegisterController
     {
-        private RegisterWindow _registerWindow;
-        private UsersModel _usersModel;
+        private RegisterWindow _view;
+        private UsersModel _model;
 
-        public AddUsersController(RegisterWindow registerWindow)
+        public RegisterController(RegisterWindow view)
         {
-            _registerWindow = registerWindow;
-            _usersModel = new UsersModel();
+            _view = view;
+            _model = new UsersModel();
         }
 
         public void Register()
         {
-            _usersModel.nama = _registerWindow.txtUsername.Text;
-            _usersModel.password = _registerWindow.txtPassword.Password;
-            var result = _usersModel.AddUsers();
+            _model.nama = _view.txtUsername.Text;
+            _model.password = _view.txtPassword.Password;
+            var result = _model.AddUsers();
             if (result)
             {
                 MessageBox.Show("pembuatan akun berhasil silahkan Login");
                 var loginWindow = new LoginWindow();
                 loginWindow.Show();
-                _registerWindow.Close();
+                _view.Close();
             }
             else
             {

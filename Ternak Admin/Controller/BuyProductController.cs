@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using System.Windows.Media.Imaging;
 using Ternak_Admin.Model;
 using Ternak_Admin.View;
@@ -46,22 +47,27 @@ namespace Ternak_Admin.Controller
 
             _model.metode_pembayaran = metode;
 
-            var result = _model.AddPurchase();
-            if (result)
+
+            if (MessageBox.Show("Apakah anda yakin membeli produk?", "Konfirmasi", MessageBoxButton.YesNo,
+                    MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                var confirm = new ConfirmWindow();
-                confirm.ShowDialog();
-                _view.Close();
-            }
-            else
-            {
-                var confirm = new ConfirmWindow();
-                confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
-                confirm.Lbl1.Content = "Maaf Pembelian Gagal :(";
-                confirm.Lbl2.Content = "Pastikan anda mengisi data dengan benar";
-                confirm.Lbl3.Content = "Jika anda Mengalami kesulitan hubungi kami";
-                confirm.ShowDialog();
-                _view.Close();
+                var result = _model.AddPurchase();
+                if (result)
+                {
+                    var confirm = new ConfirmWindow();
+                    confirm.ShowDialog();
+                    _view.Close();
+                }
+                else
+                {
+                    var confirm = new ConfirmWindow();
+                    confirm.ImgIcon.Source = new BitmapImage(new Uri("/Img/ic_cancel.png", UriKind.Relative));
+                    confirm.Lbl1.Content = "Maaf Pembelian Gagal :(";
+                    confirm.Lbl2.Content = "Pastikan anda mengisi data dengan benar";
+                    confirm.Lbl3.Content = "Jika anda Mengalami kesulitan hubungi kami";
+                    confirm.ShowDialog();
+                    _view.Close();
+                }
             }
         }
     }

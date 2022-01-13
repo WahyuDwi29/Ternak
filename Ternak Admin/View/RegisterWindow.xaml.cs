@@ -6,16 +6,16 @@ namespace Ternak_Admin.View
 {
     public partial class RegisterWindow : Window
     {
-        private AddUsersController _addUsers;
+        private RegisterController _register;
         public RegisterWindow()
         {
             InitializeComponent();
-            _addUsers = new AddUsersController(this);
+            _register = new RegisterController(this);
         }
 
         private void Btndaftar(object sender, RoutedEventArgs e)
         {
-            _addUsers.Register();
+            _register.Register();
         }
 
         private void LblDaftar_OnMouseDown(object sender, MouseButtonEventArgs e)
