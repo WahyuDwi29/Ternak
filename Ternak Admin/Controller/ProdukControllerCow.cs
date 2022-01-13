@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Windows.Documents;
 using Ternak_Admin.Model;
 using Ternak_Admin.View;
 
@@ -19,20 +20,7 @@ namespace Ternak_Admin.Controller
 
         public List<DataProduct> ShowProductCow()
         {
-            var ds = _model.ShowProduct();
-            var cowProduct = new List<DataProduct>();
-            foreach (DataRow dr in ds.Tables[0].Rows)
-            {
-                var imageUri = String.Concat(
-                    System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName +
-                    "\\img\\", Convert.ToString(dr["gambar"]));
-                cowProduct.Add(
-                    new DataProduct(Convert.ToInt32(dr["id_produk"]), Convert.ToString(dr["nama"]),
-                        Convert.ToInt32(dr["harga"]),
-                        imageUri));
-            }
-
-            return cowProduct;
+            return _model.ShowProduct();
         }
     }
 }
